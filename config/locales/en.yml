@@ -1,4 +1,6 @@
 en:
+  following: Following
+  followers: Followers
   less_than_5mb: should be less than 5MB
   micropost_delete_failed: Micropost delete failed.
   micropost_deleted: Micropost deleted
@@ -53,6 +55,9 @@ en:
       maximum_file_size_msg: Maximum file size is 5MB. Please choose a smaller file.
       post: Post
       compose_new_micropost: Compose new micropost...
+    stats:
+      following: following
+      followers: followers
     user_info:
       view_my_profile: view my profile
       micropost: micropost
@@ -88,6 +93,13 @@ en:
       the: The
       by: by
   users:
+    show_follow:
+      view_my_profile: view my profile
+      microposts: "Microposts:"
+    follow:
+      follow: Follow
+    unfollow:
+      unfollow: Unfollow
     show:
       microposts: Microposts
     index:
