@@ -1,5 +1,12 @@
 en:
+  input_invalid: Your data input not valid.
+  user_not_found: User not found
+  welcome_sample_app: Welcome to the Sample App!
   ror_tut_sample_app: Ruby on Rails Tutorial Sample App
+  shared:
+    error_messages:
+      form_contains: The form contains
+      error: error
   layouts:
     header:
       sample_app: sample app
@@ -15,8 +22,13 @@ en:
   users:
     new:
       sign_up: Sign up
+      create_my_account: Create my account
+      confirmation: Confirmation
+
   static_pages:
     home:
+      sign_up_now: Sign up now!
+      welcome_to_sample_app: Welcome to the Sample App
       sample_app: Sample App
       home: Home
       content_html: This is the home page for the %{href} sample application.
