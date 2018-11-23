@@ -1,10 +1,11 @@
 class UsersController < ApplicationController
-  before_action :load_user
+  before_action :load_user, only: %i(show edit update destroy)
   before_action :logged_in_user, only: %i(index edit update destroy)
   before_action :correct_user, only: %i(edit update)
+  before_action :admin_user, only: :destroy
 
   def index
-    @users = User.page(params[:page])
+    @users = User.active.page(params[:page])
                  .per Settings.pagination.number_user_per_page
   end
 
@@ -16,16 +17,20 @@ class UsersController < ApplicationController
     @user = User.new user_params
 
     if @user.save
-      log_in @user
-      flash[:success] = t "welcome_sample_app"
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t "check_email_to_active_account"
+      redirect_to root_url
     else
       flash[:danger] = t "input_invalid"
       render :new
     end
   end
 
-  def show; end
+  def show
+    return if @user.activated
+    flash[:danger] = t "account_not_activated"
+    redirect_to root_url
+  end
 
   def edit; end
 
@@ -40,10 +45,15 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    User.find_by(id: params[:id]).destroy
-    flash[:success] = t "user_deleted"
+    if @user.destroy
+      flash[:success] = t "user_deleted"
+    else
+      flash[:danger] = t "user_deleted_failed"
+    end
     redirect_to users_url
   end
+
+  private
 
   def logged_in_user
     return if logged_in?
@@ -56,11 +66,13 @@ class UsersController < ApplicationController
     redirect_to root_url unless current_user?(@user)
   end
 
-  private
-
   def user_params
     params.require(:user)
           .permit :name, :email, :password, :password_confirmation
+  end
+
+  def admin_user
+    redirect_to root_url unless current_user.admin?
   end
 
   def load_user

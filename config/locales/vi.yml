@@ -1,27 +1,86 @@
 vi:
-  ror_tut_sample_app: Huong dan Ruby on Rails
+  account_activation: Kích hoạt tài khoản
+  account_not_activated: Tài khoản chưa được kích hoạt. 
+  check_email_to_active: Tài khoản chưa được kích hoạt. Kiểm tra email của bạn cho các liên kết kích hoạt.
+  user_deleted: Đã xoá người dùng
+  check_email_to_active_account: Vui lòng kiểm tra email của bạn để kích hoạt tài khoản.
+  account_activated: Tài khoản đã được kích hoạt!
+  invalid_activation_link: Liên kết kích hoạt không hợp lệ
+  invalid_email_password: Email/ Mật khẩu không hợp lệ
+  input_invalid: Dữ liệu đầu vào của bạn không hợp lệ.
+  user_not_found: Không tìm thấy người dùng.
+  welcome_sample_app: Chào mừng bạn đến với Sample App!
+  please_log_in: Xin vui lòng đăng nhập.
+  profile_updated: Hồ sơ cá nhân đã cập nhật.
+  ror_tut_sample_app: Ruby on Rails Tutorial Sample App
+  user_mailer:
+    account_activation:
+      hi: Chào
+      welcome_message: Chào mừng bạn đến với Sample App! Nhấp vào liên kết dưới đây để kích hoạt tài khoản của bạn
+      sample_app: Sample App
+      activate: Kích hoạt
+  shared:
+    error_messages:
+      form_contains: Biểu mẫu có
+      error: lỗi
+  sessions:
+    new:
+      log_in: Đăng nhập
+      sign_up_now: Đăng ký ngay!
+      remember_me: Hãy nhớ tôi!
+      new_user: Người dùng mới?
   layouts:
     header:
+      users: Người dùng
+      account: Tài khoản
+      profile: Hồ sơ
+      settings: Cài đặt
+      log_out: Đăng xuất
       sample_app: sample app
-      home: Trang chu
-      help: Tro giup
-      log_in: Dang nhap
+      home: Trang chủ
+      help: Trợ giúp
+      log_in: Đăng nhập
+      account_html: Tài khoản <b class="caret"></b>
     footer:
-      about: Ve chung toi
-      contact: Lien he
-      news: Tin tuc moi
+      about: Về chúng tôi
+      contact: Liên hệ
+      news: Tin tức
       the: ""
-      by: boi
+      by: bởi
+  users:
+    index:
+      all_users: Tất cả người dùng
+    user:
+      you_sure: Bạn chắc chắn chứ?
+      delete: xoá
+    new:
+      sign_up: Đăng ký
+      create_my_account: Tạo tài khoản
+      confirmation: Xác nhận
+    edit:
+      update_your_profile: Cập nhật hồ sơ của bạn
+      edit_user: Chỉnh sửa người dùng
+      save_changes: Lưu các thay đổi
+      change: thay đổi
   static_pages:
     home:
-      sample_app: Ung dung don gian
-      home: Trang chu
+      sign_up_now: Đăng ký ngay!
+      welcome_to_sample_app: Chào mừng bạn đến với Sample App
+      sample_app: Sample App
+      home: Trang chủ
+      content_html: Đây là trang chủ %{href} sample application.
     help:
-      help: Tro giup
+      rails_help_page: trang trợ giúp Rails Tutorial
+      ror_book_html: sách <em>Ruby on Rails Tutorial</em>
+      help: Trợ giúp
+      content_html: Tìm sự giúp đỡ Ruby on Rails Tutorial tại %{href1}. Sự giúp đỡ sample app, xem tại %{href2}.
     contact:
-      contact: Lien he
+      contact_page: trang liên hệ
+      contact: Liên hệ
+      content_html: Liên hệ Ruby on Rails Tutorial về sample app tại %{href}.
     about:
-      about: Ve chung toi
-      book: sach
-      screencast_series: loat hinh anh
-      this_is_the_sample_application_for_the_tutorial: Day la ung dung don gian cho huong dan nay.
+      about: Về chúng tôi
+      book: quyển sách
+      screencast_series: các hình ảnh      
+      content_html: "%{href1} là một %{href2} và %{href3} để dạy phát triển web với %{href4}. 
+                    Đây là hướng dẫn cho sample_app."
