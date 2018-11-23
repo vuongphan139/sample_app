@@ -1,5 +1,6 @@
+gravatar_size: 80
+remember_me: "1"
 user_validates:
   min_length_password: 6
   max_length_email: 255
   max_length_name: 50
-gravatar_size: 80
