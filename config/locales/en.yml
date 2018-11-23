@@ -1,1 +1,22 @@
 en:
+  static_pages:
+    home:
+      sample_app: Sample App
+      home: Home
+      content_html: This is the home page for the %{href} sample application.
+    help:
+      rails_help_page: Rails Tutorial help page
+      ror_book_html: <em>Ruby on Rails Tutorial</em> book
+      help: Help
+      content_html: Get help on the Ruby on Rails Tutorial at the %{href1}. To get help on this sample app, see the %{href2}.
+    contact:
+      contact_page: contact page
+      contact: Contact
+      content_html: Contact the Ruby on Rails Tutorial about the sample app at the %{href}.
+    about:
+      about: About
+      book: book
+      screencast_series: screencast series
+      this_is_the_sample_application_for_the_tutorial:        
+      content_html: The %{href1} is a %{href2} and %{href3} to teach web development with %{href4}. 
+                    This is the sample application for the tutorial.

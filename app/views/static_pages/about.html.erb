@@ -1,0 +1,9 @@
+<% provide :title, t(".about") %>
+<h1><%= t ".about" %></h1>
+<p>
+  <%= t ".content_html", 
+    href1: link_to("<em>Ruby on Rails Tutorial</em>".html_safe, "http://www.railstutorial.org/"), 
+    href2: link_to(t(".book"), "http://www.railstutorial.org/book"),
+    href3: link_to(t(".screencast_series"), "http://screencasts.railstutorial.org/"),
+    href4: link_to("Ruby on Rails", "http://rubyonrails.org/") %>
+</p>
