@@ -1,5 +1,20 @@
 en:
   ror_tut_sample_app: Ruby on Rails Tutorial Sample App
+  layouts:
+    header:
+      sample_app: sample app
+      home: Home
+      help: Help
+      log_in: Log in
+    footer:
+      about: About
+      contact: Contact
+      news: News
+      the: The
+      by: by
+  users:
+    new:
+      sign_up: Sign up
   static_pages:
     home:
       sample_app: Sample App

@@ -1,5 +1,17 @@
 vi:
   ror_tut_sample_app: Huong dan Ruby on Rails
+  layouts:
+    header:
+      sample_app: sample app
+      home: Trang chu
+      help: Tro giup
+      log_in: Dang nhap
+    footer:
+      about: Ve chung toi
+      contact: Lien he
+      news: Tin tuc moi
+      the: ""
+      by: boi
   static_pages:
     home:
       sample_app: Ung dung don gian
