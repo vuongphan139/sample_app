@@ -1,0 +1,14 @@
+vi:
+  static_pages:
+    home:
+      sample_app: Ung dung don gian
+      home: Trang chu
+    help:
+      help: Tro giup
+    contact:
+      contact: Lien he
+    about:
+      about: Ve chung toi
+      book: sach
+      screencast_series: loat hinh anh
+      this_is_the_sample_application_for_the_tutorial: Day la ung dung don gian cho huong dan nay.
