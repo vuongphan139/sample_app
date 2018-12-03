@@ -1,4 +1,5 @@
 en:
+  ror_tut_sample_app: Ruby on Rails Tutorial Sample App
   static_pages:
     home:
       sample_app: Sample App
