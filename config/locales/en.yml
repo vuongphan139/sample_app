@@ -1,4 +1,5 @@
 en:
+  invalid_email_password: Invalid email/password combination
   input_invalid: Your data input not valid.
   user_not_found: User not found
   welcome_sample_app: Welcome to the Sample App!
@@ -7,8 +8,17 @@ en:
     error_messages:
       form_contains: The form contains
       error: error
+  sessions:
+    new:
+      log_in: Log in
+      sign_up_now: Sign up now!
   layouts:
     header:
+      users: Users
+      account: Account
+      profile: Profile
+      settings: Settings
+      log_out: Log out
       sample_app: sample app
       home: Home
       help: Help
