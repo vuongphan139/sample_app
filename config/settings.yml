@@ -1,5 +1,7 @@
 gravatar_size: 80
 remember_me: "1"
+pagination:
+  number_user_per_page: 10
 user_validates:
   min_length_password: 6
   max_length_email: 255

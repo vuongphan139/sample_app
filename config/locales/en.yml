@@ -1,8 +1,11 @@
 en:
+  user_deleted: User deleted
   invalid_email_password: Invalid email/password combination
   input_invalid: Your data input not valid.
   user_not_found: User not found
   welcome_sample_app: Welcome to the Sample App!
+  please_log_in: Please log in.
+  profile_updated: Profile updated
   ror_tut_sample_app: Ruby on Rails Tutorial Sample App
   shared:
     error_messages:
@@ -33,11 +36,20 @@ en:
       the: The
       by: by
   users:
+    index:
+      all_users: All users
+    user:
+      you_sure: You sure?
+      delete: delete
     new:
       sign_up: Sign up
       create_my_account: Create my account
       confirmation: Confirmation
-
+    edit:
+      update_your_profile: Update your profile
+      edit_user: Edit user
+      save_changes: Save changes
+      change: change
   static_pages:
     home:
       sign_up_now: Sign up now!

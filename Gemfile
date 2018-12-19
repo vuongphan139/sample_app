@@ -1,10 +1,14 @@
+source "https://rubygems.org"
+
 gem "bcrypt", "3.1.12"
 gem "bootsnap", ">= 1.1.0", require: false
 gem "bootstrap-sass", "3.3.7"
 gem "coffee-rails", "~> 4.2"
 gem "config", "~> 1.4"
+gem "faker", "1.7.3"
 gem "jbuilder", "~> 2.5"
 gem "jquery-rails", "4.3.1"
+gem "kaminari", "~> 1.1", ">= 1.1.1"
 gem "puma", "~> 3.11"
 gem "rails", "~> 5.2.1"
 gem "sass-rails", "~> 5.0"
