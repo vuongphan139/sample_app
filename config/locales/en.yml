@@ -1,5 +1,12 @@
 en:
+  account_activation: Account activation
+  account_not_activated: Account not activated. 
+  check_email_to_active: Account not activated. Check your email for the activation link.
   user_deleted: User deleted
+  user_deleted_failed: User deleted failed
+  check_email_to_active_account: Please check your email to active your account.
+  account_activated: Account activated!
+  invalid_activation_link: Invalid activation link
   invalid_email_password: Invalid email/password combination
   input_invalid: Your data input not valid.
   user_not_found: User not found
@@ -7,6 +14,12 @@ en:
   please_log_in: Please log in.
   profile_updated: Profile updated
   ror_tut_sample_app: Ruby on Rails Tutorial Sample App
+  user_mailer:
+    account_activation:
+      hi: Hi
+      welcome_message: Welcome to the Sample App! Click on the link below to activate your account
+      sample_app: Sample App
+      activate: Activate
   shared:
     error_messages:
       form_contains: The form contains
