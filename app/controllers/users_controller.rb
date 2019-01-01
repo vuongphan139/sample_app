@@ -27,9 +27,13 @@ class UsersController < ApplicationController
   end
 
   def show
-    return if @user.activated
-    flash[:danger] = t "account_not_activated"
-    redirect_to root_url
+    if @user.activated
+      @microposts = @user.microposts.page(params[:page])
+                         .per Settings.micropost_items_per_page
+    else
+      flash[:danger] = t "account_not_activated"
+      redirect_to root_url
+    end
   end
 
   def edit; end

@@ -1,4 +1,8 @@
 en:
+  less_than_5mb: should be less than 5MB
+  micropost_delete_failed: Micropost delete failed.
+  micropost_deleted: Micropost deleted
+  micropost_created: Micropost created!
   invalid_password: Invalid password
   sent_password_reset: Email sent with password reset instructions
   password_has_been_reset: Password has been reset.
@@ -13,9 +17,9 @@ en:
   user_deleted_failed: User deleted failed
   check_email_to_active_account: Please check your email to active your account.
   account_activated: Account activated!
+  input_invalid: Your data input not valid.
   invalid_activation_link: Invalid activation link
   invalid_email_password: Invalid email/password combination
-  input_invalid: Your data input not valid.
   user_not_found: User not found
   welcome_sample_app: Welcome to the Sample App!
   please_log_in: Please log in.
@@ -45,6 +49,19 @@ en:
     error_messages:
       form_contains: The form contains
       error: error
+    micropost_form:
+      maximum_file_size_msg: Maximum file size is 5MB. Please choose a smaller file.
+      post: Post
+      compose_new_micropost: Compose new micropost...
+    user_info:
+      view_my_profile: view my profile
+      micropost: micropost
+  microposts:
+    microposts:
+      you_sure: You sure?
+      delete: delete
+      posted: Posted
+      ago: ago
   sessions:
     new:
       log_in: Log in
@@ -71,6 +88,8 @@ en:
       the: The
       by: by
   users:
+    show:
+      microposts: Microposts
     index:
       all_users: All users
     user:
@@ -87,6 +106,7 @@ en:
       change: change
   static_pages:
     home:
+      micropost_feed: Micropost Feed
       sign_up_now: Sign up now!
       welcome_to_sample_app: Welcome to the Sample App
       sample_app: Sample App

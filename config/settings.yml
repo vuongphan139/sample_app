@@ -1,6 +1,11 @@
-gravatar_size: 80
+gravatar_size: 50
+gravatar_size_default: 80
 hours_expired: 2
+image_file_max_size: 5
+max_length_micropost_content: 140
+micropost_items_per_page: 10
 remember_me: "1"
+resize_image_limit: [300, 300]
 pagination:
   number_user_per_page: 10
 user_validates:

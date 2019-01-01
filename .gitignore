@@ -38,3 +38,7 @@ config/settings/*.local.yml
 config/environments/*.local.yml
 
 /config/application.yml
+
+public/javascripts/
+public/uploads/
+app/assets/javascripts/i18n/
