@@ -1,0 +1,6 @@
+<%= form_for @update_relationship,
+             html: {method: :delete},
+             remote: true,
+             authenticity_token: true do |f| %>
+  <%= f.submit t(".unfollow"), class: "btn" %>
+<% end %>

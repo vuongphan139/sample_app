@@ -1,11 +1,11 @@
 class UsersController < ApplicationController
   before_action :load_user, only: %i(show edit update destroy)
-  before_action :logged_in_user, only: %i(index edit update destroy)
+  before_action :logged_in_user, only: %i(index show edit update destroy)
   before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: :destroy
 
   def index
-    @users = User.active.page(params[:page])
+    @users = User.has_activated.page(params[:page])
                  .per Settings.pagination.number_user_per_page
   end
 
@@ -28,6 +28,8 @@ class UsersController < ApplicationController
 
   def show
     if @user.activated
+      @create_new_relationship = current_user.active_relationships.build
+      @update_relationship = current_user.active_relationships.find_by(followed_id: @user.id)
       @microposts = @user.microposts.page(params[:page])
                          .per Settings.micropost_items_per_page
     else
